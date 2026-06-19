@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha Store | Full Stack Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">AlphaStore</div>
+        <div class="auth-box" id="user-info">
+            <button onclick="login()">Login to Buy</button>
+        </div>
+        <div class="cart-btn" onclick="toggleCart()">🛒 Cart (<span id="count">0</span>)</div>
+    </nav>
+
+    <header>
+        <h1>CodeAlpha E-commerce Store</h1>
+        <p>A Simple, Clean, and Functional Shopping Experience</p>
+    </header>
+
+    <main id="products-grid"></main>
+
+    <div id="cart-sidebar" class="hidden">
+        <h2>Your Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <hr>
+        <h3 id="total-price">Total: $0</h3>
+        <button class="checkout-btn" onclick="placeOrder()">Place Order Now</button>
+        <button onclick="toggleCart()" style="margin-top: 10px; background: #999;">Close Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
